@@ -16,7 +16,7 @@ const anotherId = Symbol("1234")
 
 const bignumber = 132434312443n
 
-// Non - Primitive Data types
+// Non - Primitive Data types)(call by Reference in memory stack)
 
 // Array Object function
 
