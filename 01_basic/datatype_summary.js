@@ -28,7 +28,29 @@ const myObject = {
     bool: true,
 }
 
-const myFunction = function(){
-    console.log("Hello World");
-}
-console.log(typeof bignumber)
+//const myFunction = function(){
+//     console.log("Hello World");
+// }
+// console.log(typeof bignumber)
+
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// stack(primitive)   heap(non-primitive)
+
+let myyoutubename = "shivamspdotcom"
+ let anothername = myyoutubename
+ anothername = "chaiaurcode"
+
+ console.log(anothername)
+ console.log(myyoutubename)
+
+ let userone = {
+    email: "user@gmail.com",
+    age: 20,
+ }
+ let usertwo = userone
+
+ usertwo.email = "shivamsp7860@gmail.com"
+ console.log(userone.email)
+ console.log(usertwo.email)
