@@ -63,9 +63,9 @@ const {instructor: educator} = course//de-structure
 console.log(educator);
 
 //JSON 
-{ 
-    "name": "shivam ",
-    "age": "20",
-    "location":"bhopal"
-}
+// { 
+//     "name": "shivam ",
+//     "age": "20",
+//     "location":"bhopal"
+// }
 
