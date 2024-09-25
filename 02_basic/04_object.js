@@ -43,10 +43,29 @@ const userData = [
     userData[1].email
     // console.log(fbUser);
 
-    console.log(Object.keys(fbUser));
-    console.log(Object.values(fbUser));
-    console.log(Object.entries(fbUser));
-    console.log(fbUser.hasOwnProperty("isLogged"));
+    // console.log(Object.keys(fbUser));
+    // console.log(Object.values(fbUser));
+    // console.log(Object.entries(fbUser));
+    // console.log(fbUser.hasOwnProperty("isLogged"));
+
+
+    // Concept of de-structure and JSON(API)
+    const course = {
+        name: "JS in hindi",
+        price: "999",
+        instructor:"Shivam",
+    }
+    // console.log(course.name)
+    // console.log(course["name"])
     
-    
-    
+
+const {instructor: educator} = course//de-structure
+console.log(educator);
+
+//JSON 
+{ 
+    "name": "shivam ",
+    "age": "20",
+    "location":"bhopal"
+}
+
