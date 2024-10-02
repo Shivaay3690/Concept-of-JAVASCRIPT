@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+ .button{
+height: 100px;
+width: 100px;
+border: 2px solid black;
+display: inline-block;
+ }
+
+ .canvas{
+    margin: 100px auto 100px;
+    width: 80%;
+    text-align: center;
+ }
+
+ #grey{
+    background-color: grey;
+ }
+ #green{
+    background-color: green;
+ }
+ #blue{
+    background-color: blue;
+ }
+ #yellow{
+    background-color: yellow;
+ }
+ #pink{
+   background-color: pink;
+ }
