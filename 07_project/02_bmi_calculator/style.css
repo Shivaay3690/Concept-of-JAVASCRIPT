@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    
+    background-color: #212121;
+}
+.container{
+    margin: 100px auto 100px;
+    padding-top: 20px;
+    height: 400px;
+    width: 400px;
+    text-align: center;
+    display: inline-flexbox;
+    color: #ffff;
+    background-color: rgb(237, 200, 69);
+    border-radius: 8px;
+    
+}
+ button{
+        font-weight: 500;
+        font-size: large;
+        border-radius: 4px;
+ } 
