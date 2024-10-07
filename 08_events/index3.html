@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async Concept</title>
+</head>
+
+<body>
+    <h2>Chai aur code</h2>
+    <button id="stop">Stop</button>
+</body>
+<script>
+
+    // setTimeout(function(){
+    //console.log("Hi, Shivam Patel")
+    //},5000)
+
+    //const myname = function(){
+    //console.log("Hi, Shivam Patel")
+    //}
+    // document.querySelector('h2').innerHTML = 'Chai coffee Javascript'
+    //setTimeout(myname,5000)
+
+    //const changeText = function(){
+    //    document.querySelector('h2').innerHTML = "Chai aur Javascript"
+    //}
+    //setTimeout(changeText,9000)
+
+    const myDate = function (str) {
+        console.log(str, Date.now());
+    }
+    //setInterval(myDate,1000,'Hello')
+    // How to stop the above loop 
+    const interVal = setInterval(myDate, 1000, 'Hello')
+    clearInterval(interVal) 
+
+
+</script>
+
+</html>
