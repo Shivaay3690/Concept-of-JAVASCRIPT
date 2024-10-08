@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API concept</title>
+</head>
+<body>
+    <div class="parent">
+
+    </div>
+</body>
+<script>
+    const requestUrl = 'https://api.github.com/users/hiteshchoudhary'
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', requestUrl)
+    xhr.onreadystatechange = function () {
+        console.log(xhr.readyState);
+        if (xhr.readyState === 4) 
+        {
+            const data = JSON.parse(this.responseText)
+            console.log(typeof data);
+            console.log(data.followers);
+        }
+        function newDiv(divTag){
+            const div = document.createElement('div')
+                 div.className = 'Myimage'
+                 document.querySelector('.parent').appendChild(div)
+         
+                 function newImg(imageTag){
+                     const image = document.createElement('img')
+                     image.src = "https://images.pexels.com/photos/9247614/pexels-photo-9247614.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                     
+                     document.querySelector('div').appendChild(image)
+                     image.style.height = '200px'
+                     image.style.width = '200px'
+                     image.style.margin = '100px'
+                     image.style.borderRadius = '10px'
+                     image.style.border = "3px solid blue"
+                 }
+                 newImg()
+             }
+             newDiv("")
+    }
+    xhr.send();
+
+   //function newDiv(divTag){
+   //const div = document.createElement('div')
+   //     div.className = 'Myimage'
+   //     document.querySelector('.parent').appendChild(div)
+//
+   //     function newImg(imageTag){
+   //         const image = document.createElement('img')
+   //         image.src = "https://images.pexels.com/photos/9247614/pexels-photo-9247614.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+   //         
+   //         document.querySelector('div').appendChild(image)
+   //         image.style.height = '200px'
+   //         image.style.width = '200px'
+   //         image.style.margin = '100px'
+   //         image.style.borderRadius = '10px'
+   //         image.style.border = "3px solid blue"
+   //    
+   //     }
+   //     newImg()
+   // }
+   // newDiv("")
+   
+   
+</script>
+
+</html>
